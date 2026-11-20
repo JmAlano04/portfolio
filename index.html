@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <title>JM Alano — Web Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JM Alano is a full-stack web developer from Cavite, Philippines, building practical, user-friendly web systems with Laravel, PHP, React and MySQL.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <script>
+    // Apply saved theme before paint to avoid a flash
+    try {
+      var t = localStorage.getItem('theme');
+      if (t) document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="header">
+    <nav class="navbar">
+      <a href="#hero" class="logo" aria-label="JM Alano home">
+        <span class="logo-mark">JM</span><span class="logo-dot"></span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#projects">Work</a>
+        <a href="#videos">Video</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#clients">Clients</a>
+        <a href="#experience">Journey</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <a href="#contact" class="btn btn-sm nav-cta">Let's talk</a>
+        <button class="icon-btn mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="mobile-menu" id="mobileMenu">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Work</a>
+    <a href="#videos">Video</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#clients">Clients</a>
+    <a href="#experience">Journey</a>
+    <a href="#contact">Contact</a>
+  </aside>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="hero">
+      <div class="hero-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="eyebrow"><span class="pulse"></span> Open to work · Cavite, Philippines</span>
+          <h1 class="hero-title">Hi, I'm <span class="grad">JM Alano</span>.<br>I build web systems people actually use.</h1>
+          <p class="hero-lead">Full-stack web developer with a front-end eye. I turn manual, messy processes into clean, responsive, easy-to-use websites and back-end systems.</p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn">See my work <i class="fas fa-arrow-right"></i></a>
+            <a href="Alano, Jenmar A_CV.pdf" download="Alano, Jenmar A_CV.pdf" class="btn btn-outline"><i class="fas fa-download"></i> Download CV</a>
+          </div>
+
+          <ul class="hero-stats">
+            <li><strong>6+</strong><span>Projects built</span></li>
+            <li><strong>2</strong><span>Client systems</span></li>
+            <li><strong>BS IT</strong><span>Class of 2026</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="photo-frame">
+            <img src="images/556821789_4078432949082855_9006737327981067640_n.jpg" alt="Portrait of JM Alano">
+          </div>
+          <div class="float-chip chip-1"><i class="fab fa-laravel"></i> Laravel</div>
+          <div class="float-chip chip-2"><i class="fab fa-react"></i> React</div>
+          <div class="float-chip chip-3"><i class="fas fa-database"></i> MySQL</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="contact-strip">
+          <a href="mailto:Jenmaralano11@gmail.com"><i class="fas fa-envelope"></i> Jenmaralano11@gmail.com</a>
+          <a href="https://github.com/JmAlano04" target="_blank" rel="noopener"><i class="fab fa-github"></i> github.com/JmAlano04</a>
+          <a href="https://www.linkedin.com/in/jenmaralano" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i> linkedin.com/in/jenmaralano</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-label">01 / About</span>
+          <h2>Detail-focused, self-motivated, always learning.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text" data-reveal>
+            <p>I'm a self-motivated web developer with a background in creating, designing and implementing projects. I care about efficient, user-friendly solutions and about delivering quality work through continuous learning.</p>
+            <p>I work across front-end, back-end and database management, building responsive, accessible interfaces that feel good on every device.</p>
+
+            <div class="skill-groups">
+              <div class="skill-group">
+                <h3>Front-end</h3>
+                <div class="chips">
+                  <span class="chip"><i class="fab fa-html5"></i> HTML5</span>
+                  <span class="chip"><i class="fab fa-css3-alt"></i> CSS3</span>
+                  <span class="chip"><i class="fab fa-js"></i> JavaScript</span>
+                  <span class="chip"><i class="fab fa-react"></i> React.js</span>
+                  <span class="chip"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                  <span class="chip"><i class="fas fa-wind"></i> Tailwind CSS</span>
+                  <span class="chip"><i class="fas fa-desktop"></i> Responsive Design</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <h3>Back-end &amp; Data</h3>
+                <div class="chips">
+                  <span class="chip"><i class="fab fa-php"></i> PHP</span>
+                  <span class="chip"><i class="fab fa-laravel"></i> Laravel</span>
+                  <span class="chip"><i class="fas fa-database"></i> MySQL</span>
+                  <span class="chip"><i class="fas fa-database"></i> PostgreSQL</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <h3>Tools</h3>
+                <div class="chips">
+                  <span class="chip"><i class="fab fa-git-alt"></i> Git</span>
+                  <span class="chip"><i class="fab fa-github"></i> GitHub</span>
+                  <span class="chip"><i class="fab fa-figma"></i> Figma</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-image" data-reveal>
+            <img src="images/5R (3).JPG" alt="JM working on a laptop">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="alt">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-label">02 / Work</span>
+          <h2>Web development projects</h2>
+          <p>Each one starts with a real problem. Here's what I found, what I built and what changed.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="card project-card" data-reveal>
+            <div class="card-media"><img src="images/Barangay.jpg" alt="Barangay Information System" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-meta"><span class="tag tag-accent">Full Stack</span><span class="meta-note">School project</span></div>
+              <h3>Barangay Information System</h3>
+              <dl class="psr">
+                <div><dt>Problem</dt><dd>Manual resident transactions and record-keeping are slow and hard to manage.</dd></div>
+                <div><dt>Solution</dt><dd>A digital system that centralizes resident records and service transactions.</dd></div>
+                <div><dt>Result</dt><dd>More organized transactions and better record management for local officials.</dd></div>
+              </dl>
+              <p class="stack">HTML5 · CSS · JavaScript · PHP · MySQL</p>
+              <div class="card-links">
+                <a href="https://brgypaliparan2portal.fwh.is/BIS/index.php" target="_blank" rel="noopener" class="btn btn-sm">Live preview</a>
+                <a href="https://github.com/JmAlano04/Barangay-Infromation-System" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> Source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card" data-reveal>
+            <div class="card-media"><img src="images/Medistock.jpg" alt="Medistock Inventory Management System" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-meta"><span class="tag tag-accent">Full Stack</span><span class="meta-note">Personal project</span></div>
+              <h3>Medistock Inventory System</h3>
+              <dl class="psr">
+                <div><dt>Problem</dt><dd>Manual tracking makes stock levels, expiry dates and records hard to monitor.</dd></div>
+                <div><dt>Solution</dt><dd>Manages products, tracks stock and expiry, generates reports and secures user access.</dd></div>
+                <div><dt>Result</dt><dd>Organized inventory with far less manual record-keeping.</dd></div>
+              </dl>
+              <p class="stack">HTML5 · CSS · JavaScript · Laravel · MySQL</p>
+              <div class="card-links">
+                <a href="https://github.com/JmAlano04/Inventory-Management-System-Medistock-" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> Source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card" data-reveal>
+            <div class="card-media"><img src="images/figma design -Payroll.jpg" alt="Smart Payroll Management System design" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-meta"><span class="tag tag-accent">Full Stack</span><span class="meta-note">Personal · In progress</span></div>
+              <h3>Smart Payroll Management</h3>
+              <dl class="psr">
+                <div><dt>Problem</dt><dd>Managing employees, attendance, salaries and payslips by hand is repetitive and error-prone.</dd></div>
+                <div><dt>Solution</dt><dd>A full-stack payroll system with attendance, salary computation, payslips and role-based dashboards.</dd></div>
+                <div><dt>Result</dt><dd>Designed to simplify payroll workflows and employee data management.</dd></div>
+              </dl>
+              <p class="stack">React.js · Laravel · PostgreSQL</p>
+              <div class="card-links">
+                <a href="https://github.com/JmAlano04/SmartPayrollManagementSystem" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fab fa-github"></i> Source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card" data-reveal>
+            <div class="card-media"><img src="images/figma design - HR Website Directory.jpg" alt="HRM Directory Website" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-meta"><span class="tag">Front-End</span><span class="meta-note">Internship project</span></div>
+              <h3>HRM Directory Website</h3>
+              <dl class="psr">
+                <div><dt>Problem</dt><dd>HR services and personnel information are hard to find when they aren't centralized.</dd></div>
+                <div><dt>Solution</dt><dd>A centralized HRM directory website for DepEd Cavite Province.</dd></div>
+                <div><dt>Result</dt><dd>Easier, more organized access to HR services and personnel information.</dd></div>
+              </dl>
+              <p class="stack">HTML · CSS · JavaScript</p>
+              <div class="card-links">
+                <button class="btn btn-sm" disabled>Private (internal use)</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card" data-reveal>
+            <div class="card-media"><img src="images/figma design - asdasd.jpg" alt="Real estate web design" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-meta"><span class="tag tag-teal">Web Design</span><span class="meta-note">Figma</span></div>
+              <h3>Real Estate Interface</h3>
+              <dl class="psr">
+                <div><dt>Problem</dt><dd>Property sites need clear navigation and organized listings so people can find homes quickly.</dd></div>
+                <div><dt>Solution</dt><dd>A modern real estate interface with listings, search and a clean layout.</dd></div>
+                <div><dt>Result</dt><dd>A more organized, user-friendly experience for buyers and agents.</dd></div>
+              </dl>
+              <div class="card-links">
+                <a href="https://drive.google.com/file/d/12bkJ_HTSu2auyETE95-7CLz3ijvA7uZW/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn-sm">View design</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card" data-reveal>
+            <div class="card-media"><img src="images/Web Design.jpg" alt="Login page design" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-meta"><span class="tag tag-teal">Web Design</span><span class="meta-note">Figma</span></div>
+              <h3>Login Page</h3>
+              <dl class="psr">
+                <div><dt>Problem</dt><dd>A complicated login screen makes it harder for people to get into a system.</dd></div>
+                <div><dt>Solution</dt><dd>A simple, modern login page with a clean interface.</dd></div>
+                <div><dt>Result</dt><dd>A straightforward, friendly entry point for users.</dd></div>
+              </dl>
+              <div class="card-links">
+                <a href="https://drive.google.com/file/d/1EXJY0IWgfaTomMVOYK81eOqFb_kONXa3/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-sm">View design</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Videos -->
+    <section id="videos">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-label">03 / Video</span>
+          <h2>Video editing projects</h2>
+          <p>Storytelling beyond code. Click a thumbnail to watch the full video.</p>
+        </div>
+
+        <div class="videos-grid">
+          <a href="https://drive.google.com/file/d/16_iFmYZ_xgCyZcPiliub6m0ufvURO12A/view?usp=sharing" target="_blank" rel="noopener" class="card video-card" data-reveal>
+            <div class="card-media video-thumb">
+              <img src="images/projectCODE.jpg" alt="Project CODE infographic video" loading="lazy">
+              <span class="play-icon"><i class="fas fa-play"></i></span>
+            </div>
+            <div class="card-body">
+              <h3>Infographic Video</h3>
+              <p>Educational infographic about Project CODE, which uses interactive HTML games to help Grade 10 students improve English grammar.</p>
+              <div class="card-meta"><span class="tag">CapCut</span><span class="meta-note">Google Drive</span></div>
+            </div>
+          </a>
+
+          <a href="https://drive.google.com/file/d/1cnDK0D7HbvrYWFDojlk-cJ-mYBQ4-dc3/view" target="_blank" rel="noopener" class="card video-card" data-reveal>
+            <div class="card-media video-thumb">
+              <img src="images/5072b780-bded-4429-ac8b-fe4cc1a2322d.jpg" alt="Informational video" loading="lazy">
+              <span class="play-icon"><i class="fas fa-play"></i></span>
+            </div>
+            <div class="card-body">
+              <h3>Informational Video</h3>
+              <p>Rizal's message to the young women of Malolos.</p>
+              <div class="card-meta"><span class="tag">CapCut</span><span class="meta-note">Google Drive</span></div>
+            </div>
+          </a>
+
+          <a href="https://drive.google.com/file/d/1a9AIibcdLb_l_6B31m_uzAI4uQZqe5zm/view?usp=drive_link" target="_blank" rel="noopener" class="card video-card" data-reveal>
+            <div class="card-media video-thumb">
+              <img src="images/44f4e13d-ba1f-4f50-ac8c-57c4f8e8d7ad.jpg" alt="Introduction video" loading="lazy">
+              <span class="play-icon"><i class="fas fa-play"></i></span>
+            </div>
+            <div class="card-body">
+              <h3>Introduction Video</h3>
+              <p>Audio-visual presentation for a pageant candidate, highlighting background, advocacy and key information.</p>
+              <div class="card-meta"><span class="tag">CapCut</span><span class="meta-note">Google Drive</span></div>
+            </div>
+          </a>
+
+          <a href="https://drive.google.com/file/d/1iNipgwkKS7BtbDXvZmyRJnQtKxiasGVx/view?usp=drive_link" target="_blank" rel="noopener" class="card video-card" data-reveal>
+            <div class="card-media video-thumb">
+              <img src="images/dbe20916-d697-4815-97e4-405ef30b2453.jpg" alt="Acting performance video" loading="lazy">
+              <span class="play-icon"><i class="fas fa-play"></i></span>
+            </div>
+            <div class="card-body">
+              <h3>Acting Performance Video</h3>
+              <p>Collaborative drama performance showcasing character portrayal, scripted dialogue and emotional expression.</p>
+              <div class="card-meta"><span class="tag">CapCut</span><span class="meta-note">Google Drive</span></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificates" class="alt">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-label">04 / Certificates</span>
+          <h2>Training &amp; certifications</h2>
+          <p>Professional training I've completed.</p>
+        </div>
+
+        <div class="certificates-grid">
+          <article class="card cert-card" data-reveal>
+            <div class="card-media"><img src="MY CERTIFICATE/OJT CERTIFICATE.png" alt="OJT certificate" loading="lazy"></div>
+            <div class="card-body">
+              <h3>Personnel Unit – HR Department</h3>
+              <p>Issued May 2025 · Internship</p>
+              <a href="https://drive.google.com/file/d/101IRPJYT0wE0WHwIkmrjPMab-XsDel6A/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-sm">View certificate</a>
+            </div>
+          </article>
+
+          <article class="card cert-card" data-reveal>
+            <div class="card-media"><img src="MY CERTIFICATE/Screenshot 2026-03-13 170938.png" alt="What is Software Development certificate" loading="lazy"></div>
+            <div class="card-body">
+              <h3>What is Software Development?</h3>
+              <p>Issued Aug 2025 · Professional development</p>
+              <a href="https://simpli-web.app.link/e/ygFXtnwSB1b" target="_blank" rel="noopener" class="btn btn-sm">View certificate</a>
+            </div>
+          </article>
+
+          <article class="card cert-card" data-reveal>
+            <div class="card-media"><img src="MY CERTIFICATE/Simplelearn(Indroduction to PHP).jpg" alt="Introduction to PHP certificate" loading="lazy"></div>
+            <div class="card-body">
+              <h3>Introduction to PHP</h3>
+              <p>Issued Jul 2025 · Professional development</p>
+              <a href="https://simpli-web.app.link/e/7iFxHNSSB1b" target="_blank" rel="noopener" class="btn btn-sm">View certificate</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients -->
+    <section id="clients">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-label">05 / Clients</span>
+          <h2>Client work</h2>
+          <p>Selected projects where I helped turn real-world needs into practical digital solutions.</p>
+        </div>
+
+        <div class="client-carousel" data-reveal>
+          <button class="carousel-btn" id="clientPrev" aria-label="Previous client work"><i class="fas fa-chevron-left"></i></button>
+
+          <div class="client-carousel-window">
+            <div class="client-carousel-track" id="clientTrack">
+
+              <article class="client-slide">
+                <div class="client-slide-image"><img src="images/hrm.png" alt="Department of Education HRM project" loading="lazy"></div>
+                <div class="client-slide-content">
+                  <span class="tag tag-accent">Client</span>
+                  <h3>Department of Education – HRM Directory</h3>
+                  <dl class="psr">
+                    <div><dt>Problem</dt><dd>HR services and personnel information are hard to access when not centralized.</dd></div>
+                    <div><dt>Solution</dt><dd>A centralized HRM directory website that organizes HR services and personnel information.</dd></div>
+                    <div><dt>My role</dt><dd>Front-end development, interface implementation and usability improvements.</dd></div>
+                  </dl>
+                  <p class="stack">HTML · CSS · JavaScript</p>
+                </div>
+              </article>
+
+              <article class="client-slide">
+                <div class="client-slide-image"><img src="images/680e09c06a45b.png" alt="Barangay Paliparan II Information System" loading="lazy"></div>
+                <div class="client-slide-content">
+                  <span class="tag tag-accent">Client</span>
+                  <h3>Barangay Paliparan II – Information System</h3>
+                  <dl class="psr">
+                    <div><dt>Problem</dt><dd>Manual resident transactions and record-keeping are slow and hard to manage.</dd></div>
+                    <div><dt>Solution</dt><dd>A digital system that centralizes resident records and service transactions.</dd></div>
+                    <div><dt>Result</dt><dd>More organized transactions and better record management for local officials.</dd></div>
+                  </dl>
+                  <p class="stack">PHP · MySQL · JavaScript · HTML · CSS</p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <button class="carousel-btn" id="clientNext" aria-label="Next client work"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="carousel-dots" id="clientDots" aria-label="Client work slides"></div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="alt">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-label">06 / Services</span>
+          <h2>What I offer</h2>
+          <p>From interfaces people enjoy to back-end systems that hold up.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="card service-card" data-reveal>
+            <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>Front-end Development</h3>
+            <p>Responsive, interactive interfaces built with modern HTML, CSS and JavaScript.</p>
+            <ul class="service-features">
+              <li>Responsive web design</li>
+              <li>Interactive UI components</li>
+              <li>Cross-browser compatibility</li>
+              <li>Performance optimization</li>
+            </ul>
+          </article>
+          <article class="card service-card" data-reveal>
+            <div class="service-icon"><i class="fas fa-server"></i></div>
+            <h3>Back-end Development</h3>
+            <p>Secure, efficient server-side logic, APIs and database architecture.</p>
+            <ul class="service-features">
+              <li>Custom PHP / Laravel apps</li>
+              <li>Database design &amp; optimization</li>
+              <li>API development</li>
+              <li>System architecture</li>
+            </ul>
+          </article>
+          <article class="card service-card" data-reveal>
+            <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+            <h3>UI/UX Design</h3>
+            <p>Intuitive experiences and clean visuals that improve usability.</p>
+            <ul class="service-features">
+              <li>Wireframing &amp; prototyping</li>
+              <li>Figma visual design</li>
+              <li>User flow planning</li>
+              <li>Usability optimization</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="section-label">07 / Journey</span>
+          <h2>My professional journey</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-date">Feb – May 2025</div>
+            <div class="timeline-content">
+              <h3>HR Personnel Unit Intern</h3>
+              <p>Supported the HR team with technical tasks and process improvements.</p>
+              <ul>
+                <li>Fixed slow-performing computers</li>
+                <li>Assisted with administrative tasks</li>
+                <li>Helped with data entry and record management</li>
+                <li>Basic hardware and software troubleshooting</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-date">2021 – 2026</div>
+            <div class="timeline-content">
+              <h3>BS Information Technology</h3>
+              <p>Completed a bachelor's degree in Information Technology.</p>
+              <ul>
+                <li>Completed multiple web development projects</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-card" data-reveal>
+          <span class="section-label on-dark">08 / Contact</span>
+          <h2>Let's build something together.</h2>
+          <p>Have a project in mind or just want to say hello? Send me a message and I'll get back to you as soon as I can.</p>
+          <div class="contact-actions">
+            <a href="mailto:Jenmaralano11@gmail.com" class="btn btn-light"><i class="fas fa-envelope"></i> Email me</a>
+            <a href="https://www.linkedin.com/in/jenmaralano" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+          </div>
+          <div class="social-links">
+            <a href="https://www.facebook.com/jm.alano.2025/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/yahj_ln/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/JmAlano04" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#hero" class="logo"><span class="logo-mark">JM</span><span class="logo-dot"></span></a>
+        <p>Thanks for stopping by! If you'd like to work together or just geek out about web development, reach out.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#projects">Work</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#clients">Clients</a>
+        <a href="#experience">Journey</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="container">
+      <p class="copyright">© <span id="year">2026</span> JM Alano. All rights reserved. Built with care and too much coffee.</p>
+    </div>
+  </footer>
+
+  <script src="js.js"></script>
+</body>
+</html>
